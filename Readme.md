@@ -1,4 +1,4 @@
-# 项目 2｜建筑规范智能问答系统（LLM + Retrieval-Augmented Generation）
+# 建筑规范智能问答系统（LLM + Retrieval-Augmented Generation）
 
 > (本作品集包含三个基于 FastAPI 服务化封装的 AIGC 系统，分别聚焦生成、检索增强与评估任务，均支持 Swagger 交互测试。)
 
@@ -198,7 +198,7 @@ Answer + Citation
    `   python vector_store/build_index.py`
 
 3. 启动系统
-   `   streamlit run app/app.py`
+   `   streamlit run app.py`
 
 ## 方式2：运行API版本
 
