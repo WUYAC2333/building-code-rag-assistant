@@ -1,0 +1,7 @@
+chromadb==1.5.1
+dashscope==1.25.12
+fastapi==0.129.2
+pydantic==1.10.12
+streamlit==1.50.0
+tenacity==9.1.2
+tqdm==4.65.0

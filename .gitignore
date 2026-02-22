@@ -1,0 +1,82 @@
+# ==================== Python 基础忽略 ====================
+# Python编译生成的字节码文件（无需追踪）
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.pyc
+*.pyo
+*.pyd
+
+# 虚拟环境（避免仓库臃肿）
+venv/
+env/
+.venv/
+ENV/
+
+# ==================== 项目专属忽略 ====================
+# 向量数据库持久化文件（体积大，无需提交，可通过build_index.py重建）
+vector_store/
+
+# 原始规范文档（PDF/TXT等大文件，可自行准备建筑规范文档放入data/raw_docs/，无需提交）
+# data/raw_docs/
+
+# 处理后的文本（可选忽略，若体积小可提交；若体积大则忽略）
+# data/processed/
+
+# 配置文件中的敏感信息（关键！避免API Key泄露）
+# 建议：把config.py里的API Key抽离到.env文件，忽略.env，同时在README说明配置方式
+.env
+.env.local
+# 如果不想改config.py，可忽略config.py（但需在README说明需自行创建config.py配置API Key）
+# config.py
+
+# ==================== 开发工具忽略 ====================
+# 编辑器配置（不同开发者的配置不同，避免冲突）
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.DS_Store  # Mac系统隐藏文件
+Thumbs.db  # Windows系统隐藏文件
+
+# 日志文件（若项目运行生成日志，需忽略）
+vector_db_build.log
+
+# 失败chunk文件
+failed_chunks.json
+
+# Jupyter Notebook（若有实验性笔记，可选忽略）
+.ipynb_checkpoints/
+*.ipynb
+
+# 系统临时文件
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# Streamlit缓存
+.streamlit/
+
+# 其他文件
+/rag_app.py
+/chunks.json
